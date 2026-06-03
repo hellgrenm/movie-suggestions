@@ -1,0 +1,9 @@
+$primary: #ffffff;
+$dark: #000000;
+
+
+// 2. Läs in Bootstrap och skicka med dina variabler
+@forward "../../node_modules/bootstrap/scss/bootstrap" with (
+  $primary: $primary,
+  $dark: $dark
+);

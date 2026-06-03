@@ -1,0 +1,16 @@
+@use "config" as *; 
+
+.navbar {
+
+  font-family: "Zen Dots", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+  .nav-link {
+    transition: color 0.3s ease;
+    
+    &:hover {
+      color: $primary !important; 
+    }
+  }
+}
