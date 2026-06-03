@@ -1,3 +1,5 @@
+import { NavLink } from 'react-router-dom'
+
 export function Navbar(){
 
     return(
@@ -14,16 +16,12 @@ export function Navbar(){
         <ul className="navbar-nav ">
 
           <li className="nav-item">
-            <a className="nav-link active" href="#">Home </a>
+            <NavLink to='/' className="nav-link">Home</NavLink>
+          </li>
+          <li className="nav-item">
+            <NavLink to='/about' className="nav-link">About</NavLink>
           </li>
 
-          <li className="nav-item">
-            <a className="nav-link " href="#">About</a>
-          </li>
-
-          <li className="nav-item">
-            <a className="nav-link" href="#">Contact</a>
-          </li>
 
         </ul>
          <h1 id="big-name" className="text-center h1 w-100">MOVIEBOX</h1>
