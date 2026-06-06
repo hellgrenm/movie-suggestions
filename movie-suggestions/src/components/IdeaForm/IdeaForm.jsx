@@ -54,26 +54,33 @@ export function  IdeaForm() {
                     </div>
                 </div>
             </form>
-                
-            <div className=' movie-results'>
-             
+
+                <div className="container row d-flex flex-wrap justify-content-start">
+
                     {movies.results && movies.results.map(movie => (
-                   <div key={movie.name} className='p-3 border border-secondary'>
-                    <div className='row'>
-                        <a className='col-6' target='_blank' href={movie.imdb}> 
-                            <p>{movie.name}</p>  
-                        </a>   
-                        <p className='col-6'>Release year: {movie.year}</p>
+
+                   <div key={movie.name} className='p-1 col-10 col-md-6 col-lg-4 pb-md-5'>
+            
+
+                    <div className="card border-white " id="movie-card" >
+                    <img className="card-img-top" src={movie.poster} alt={movie.name}  />
+                    <div className="card-body">
+                        <a target='_blank' className='text-dark' href={movie.imdb}> <h5 className="card-title">{movie.name}</h5> </a>
+                        <p className="card-text">{movie.description}</p>
+                        <p>IMDB-rating:{ movie.rating }</p>
                     </div>
-                    <div className='row justify-content-center justify-content-sm-start'>
-                    <img className='col-12 col-sm-5 mb-1' src={movie.poster} alt={movie.name} style={{width: '200px'}} /> 
-                    <p className='col-12 col-sm-7'>{movie.description}</p>
+
                     </div>
-                    <p>IMDB-rating: {movie.rating}</p>
+
+
                 </div>
-                    ))}
-                </div>       
-  
+                ))}
+
+
+                    
+                </div>
+             
+
          
 
         </>

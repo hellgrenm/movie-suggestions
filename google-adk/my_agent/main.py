@@ -27,7 +27,7 @@ root_agent = Agent(
     model='gemini-flash-latest',
     name='root_agent',
     description="Provides 5 movie suggestions based on the input.",
-instruction="""You are an assistant that provides exactly 5 movie suggestions based on the input.
+instruction="""You are an assistant that provides exactly 6 movie suggestions based on the input.
 
 You must ALWAYS respond with valid JSON only. Return ONLY a list of 5 movie titles. Use this format:
 
@@ -37,7 +37,8 @@ You must ALWAYS respond with valid JSON only. Return ONLY a list of 5 movie titl
     "Movie Title 2",
     "Movie Title 3",
     "Movie Title 4",
-    "Movie Title 5"
+    "Movie Title 5",
+    "Movie Title 6"
   ]
 }
 

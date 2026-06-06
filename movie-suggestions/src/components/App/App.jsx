@@ -10,14 +10,16 @@ function App() {
   return (
     <div className="d-flex flex-column min-vh-100 bg-dark">
 
-    <Navbar />
+    <Navbar/>
+    <main>
+      <Routes>
 
-    <Routes>
-      <Route path='/' element={ <Body/> } />
-      <Route path='/about' element={ <About /> } />
-    </Routes>
+        <Route path='/' element={ <Body/> } />
+        <Route path='/about' element={ <About /> } />
 
-    <Footer />
+      </Routes>
+    </main>
+    <Footer/>
 
     </div>
 

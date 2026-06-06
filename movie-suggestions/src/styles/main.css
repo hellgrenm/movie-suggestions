@@ -13420,10 +13420,19 @@ main {
   min-height: 100%;
 }
 
+#movie-card {
+  width: 18rem;
+  height: 45rem;
+}
+
 #big-name {
   font-family: "Noto Serif", serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
   font-size: 72px;
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
 }
