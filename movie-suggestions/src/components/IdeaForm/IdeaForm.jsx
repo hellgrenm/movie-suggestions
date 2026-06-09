@@ -66,7 +66,7 @@ export function  IdeaForm() {
                     <img className="card-img-top" src={movie.poster} alt={movie.name}  />
                     <div className="card-body">
                         <a target='_blank' className='text-dark' href={movie.imdb}> <h5 className="card-title">{movie.name}</h5> </a>
-                        <p className="card-text">{movie.description}</p>
+                        <p className="card-text">{movie.description} <a className='text-dark' target='_blank' href={movie.imdb}> Click to read more. </a> </p>
                         <p>IMDB-rating:{ movie.rating }</p>
                     </div>
 

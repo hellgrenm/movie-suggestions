@@ -14,7 +14,7 @@ export function Body() {
     
                 <Container className="fluid pt-5 mt-4 text-white">
                     <h1>Welcome to MovieBox</h1>
-                    <p>Enter a short description about a movie you would like to see and we will try to provide you with 5 movie suggestions.</p>
+                    <p>Enter a short description about a movie you would like to see and we will try to provide you with 6 movie suggestions.</p>
                 </Container>
                 <Container className="text-white">
                     < IdeaForm />
