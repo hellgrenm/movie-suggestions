@@ -16,7 +16,7 @@ app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173", "http://localhost:3000"],  # Din frontend-URL
+    allow_origins=["http://localhost:5173", "http://localhost:3000"],  
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -111,8 +111,10 @@ async def ask_agent(request: QueryRequest):
                     })
         
         return {"results": results}
-    except json.JSONDecodeError:
-        return {"response": response_text}
+    except Exception as e:
+        print(f"FEL I BACKEND: {e}")
+        return {"response": str(e)}
+    
 
 @app.get("/health")
 def health():

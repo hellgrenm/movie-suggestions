@@ -20,7 +20,9 @@ export function  IdeaForm() {
             const content = await getMovies(description);
             console.log("submit!");
             console.log(content);
+            if (content && content.length > 0){
             setMovies(content);
+            }
         } catch (error) {
             console.error("Error:", error);
         } finally {
